@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>304</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ClockWorkProject</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(255, 121, 215);
+selection-color: rgb(255, 255, 255);
+background-color: rgb(71, 71, 71);
+border:0px  solid rgb(255, 121, 215, 10);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="play_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Light</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Play</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">b_cc</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="sound_settings">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>mi.Player</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">b_cc</string>
+    </attribute>
+   </widget>
+   <widget class="QLabel" name="c_time">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Light</family>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>12:24</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="week_day">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Light</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Friday</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="date_month">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>01/11</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopwatch_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>StopWatch</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">b_cc</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="cw_confs">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>160</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ClockWorkConfigs</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">b_cc</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="t_timer">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>220</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Timer</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">b_cc</string>
+    </attribute>
+   </widget>
+   <widget class="QComboBox" name="cw_timezone">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Light</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <item>
+     <property name="text">
+      <string>Moscow</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>London</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Paris</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Vladivostok</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Saint Petersburg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Berlin</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Tokyo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Riga</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Helsinki</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Split</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>304</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="b_cc"/>
+ </buttongroups>
+</ui>
